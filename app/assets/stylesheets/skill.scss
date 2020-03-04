@@ -1,0 +1,245 @@
+.skill{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/freeLetter.jpg");
+  background-size: cover;
+  align-items: center;
+  
+  .my-skills{
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    
+    &__skill{
+      width: 60%;
+      height: 50%;
+      text-align: center;
+      opacity: 0.7;
+      text-shadow: 10px 5px 4px  #00FF3B;
+      margin: 0 auto;
+      .skill-link{
+        text-decoration: none;
+        color: black;
+        font-size: 50px;
+        font-family: cursive;
+        font-weight: bold;
+      }
+      .skill-link:hover{
+        color: #FF0461;
+      }
+    }
+    &__back-homes{
+      width: 60%;
+      height: 50%;
+      text-align: center;
+      //background-color: blue;
+      opacity: 0.7;
+      text-shadow: 10px 5px 4px  #00FF3B;
+      margin: 20px auto;
+      .back-home{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: bold;
+        
+      }
+      .back-home:hover{
+        color: #FF0461;
+      }
+    }
+  }
+  .skill-names{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    // アニメーション設定
+    animation-name: fade-in2;
+    animation-duration: 2s; //アニメーション時間
+    animation-timing-function: ease-out; //アニメーションさせるイージング
+    animation-delay: 0; //アニメーション開始させる時間
+    animation-iteration-count: 1; //繰り返し回数
+    animation-direction: normal; //往復処理をするかどうか
+    animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか
+    // アニメーション
+    @keyframes fade-in2 {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .skill-left{
+      width: 50%;
+      height: 100%;
+      margin-top: 50px;
+    
+      .skill-HTML{
+        width: 80%;
+        height: 45%;
+        //background-color: crimson;
+        margin: 0 auto;
+        background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+        opacity: 0.7;
+        border-radius: 50px;
+        .html-icon{
+          width: 70%;
+          height: 40%;
+          //background-color: darkblue;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          color: red;
+          font-size: 150px;
+        }
+        .html5{
+          width: 70%;
+          height: 10%;
+          //background-color: darkgreen;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: fantasy;
+          font-weight: bold;
+        }
+        .html-p{
+          width: 100%;
+          height: calc(100% - 50%);
+          //background-color: darkorchid;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: YuMincho;
+          font-weight: bold;
+          // padding: 10px;
+        }
+      }
+      .skill-sass{
+        width: 80%;
+        height: 45%;
+        //background-color: rgb(220, 217, 20);
+        margin: 20px auto;
+        background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+        opacity: 0.7;
+        border-radius: 50px;
+        .sass-icon{
+          width: 70%;
+          height: 40%;
+          //background-color: darkblue;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          color: red;
+          font-size: 150px;
+        }
+        .sass{
+          width: 70%;
+          height: 10%;
+          //background-color: darkgreen;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: fantasy;
+          font-weight: bold;
+        }
+        .sass-p{
+          width: 100%;
+          height: calc(100% - 50%);
+          //background-color: darkorchid;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: YuMincho;
+          font-weight: bold;
+          // padding: 10px;
+        }
+      }
+    }
+    .skill-right{
+      width: 50%;
+      height: 100%;
+      margin-top: 50px;
+      .skill-php{
+        width: 80%;
+        height: 45%;
+        //background-color: rgb(20, 180, 220);
+        margin: 0 auto;
+        background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+        opacity: 0.7;
+        border-radius: 50px;
+        .php-icon{
+          width: 70%;
+          height: 40%;
+          //background-color: darkblue;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          color: red;
+          font-size: 150px;
+        }
+        .php{
+          width: 70%;
+          height: 10%;
+          //background-color: darkgreen;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: fantasy;
+          font-weight: bold;
+        }
+        .php-p{
+          width: 100%;
+          height: calc(100% - 50%);
+          //background-color: darkorchid;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: YuMincho;
+          font-weight: bold;
+          // padding: 10px;
+        }
+      }
+      .skill-javascript{
+        width: 80%;
+        height: 45%;
+        //background-color: rgb(220, 217, 20);
+        margin: 20px auto;
+        background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+        opacity: 0.7;
+        border-radius: 50px;
+        .js-icon{
+          width: 70%;
+          height: 40%;
+          //background-color: darkblue;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          color: red;
+          font-size: 150px;
+        }
+        .js{
+          width: 70%;
+          height: 10%;
+          //background-color: darkgreen;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 30px;
+          font-family: fantasy;
+          font-weight: bold;
+        }
+        .js-p{
+          width: 100%;
+          height: calc(100% - 50%);
+          text-align: center;
+          margin: 0 auto;
+          font-size: 25px;
+          font-family: YuMincho;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

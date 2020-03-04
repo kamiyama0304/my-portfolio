@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title PresidentMakonari
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .header
+      .header__container
+        .header__container--name
+          %a.header-link{:href => root_path}Kamiyama
+        .header__container--Home
+          %ul.nav-bar
+            %li.nav-item 
+              %a.nav-link{:href => profile_messages_path }Profile
+            %li.nav-item 
+              %a.nav-link{:href => skill_messages_path }Skill
+            %li.nav-item 
+              %a.nav-link{:href => service_messages_path }Services
+            %li.nav-item 
+              %a.nav-link{:href => contact_messages_path }Contact
+    = yield

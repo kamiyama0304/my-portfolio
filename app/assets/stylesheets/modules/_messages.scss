@@ -1,0 +1,181 @@
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/freeLondon.jpg");
+  background-size: cover;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;//aline-items:center:はdisplay:flex:と併用して使う
+  align-items: center;
+  &__container{
+    width: 90%;
+    height: 50%;
+    font-family: Hiragino Mincho ProN;
+    font-size: 30px;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    justify-content: space-between;
+    // color: white;
+    &--name{
+      width: 20%;
+      height: 100%;
+      //background-color: yellow;
+      text-shadow: 10px 5px 4px  #00FF3B;
+      .header-link{
+        text-decoration: none;
+        color: white;
+      }
+      .header-link:hover{
+        color: chartreuse;
+      }
+    }
+    
+    &--Home{
+      width: 60%;
+      height: 100%;
+      //background-color: yellowgreen;
+      display: flex;
+      .nav-item{
+        display: inline;
+        text-shadow: 10px 5px 4px  #00FF3B;
+        .nav-link{
+          text-decoration: none;
+          color: white;
+          //background-color: brown;
+          margin-left: 90px;
+          justify-content: space-between;
+        }
+      }
+    }
+    .nav-link:hover{
+      color: chartreuse;
+    }
+    
+    
+  }
+}
+.header-table{
+  width: 100vw;
+  height: 600px;
+  //background-color: chartreuse;
+  opacity: 1;
+  color: white;
+  .header-table-center{
+    width: 90%;
+    height: 90%;
+    //background-color: coral;
+    opacity: 1;
+    margin: 0 auto;
+    .container{
+      width: 90%;
+      height: 90%;
+      //background-color: #FF1A6F;
+      margin: 0 auto;
+      .container-title{
+        width: 90%;
+        height: 15%;
+        //background-color: #60EEFF;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 80px;
+        font-family: Comic Sans MS;
+        font-weight: bold;
+        padding-top: 50px;
+        text-shadow: 10px 5px 4px  #DD0000;
+      }
+      .container-letter{
+        width: 90%;
+        height: 15%;
+        //background-color: #FF570D;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Georgia;
+        list-style: none;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 50px;
+        text-shadow: 10px 5px 4px  #DD0000;
+      }
+      .contact-me{
+        width: 50%;
+        height: 20%;
+        //background-color: #B6FF01	;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 150px;
+        
+        .contact-link{
+          height: 40%;
+          width: 200px;
+          background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8);
+          background: radial-gradient( #FFF, #FFC778 30%, #F89174 60%, #748af8);
+          margin: 30px ;
+          text-decoration: none;
+          color: white;
+          font-size: 30px;
+          font-family: Georgia;
+          border-radius: 40px;
+          display: inline-block;
+          box-shadow: 0px 7px 5px #FF367F;
+        }
+        .contact-link:active{
+          position: relative;
+          top: 10px;
+          box-shadow: none; 
+        }
+        .contact-link:hover{
+          color: chartreuse;
+          letter-spacing: 3px;
+          box-shadow: 0px 7px 5px #00FF3B;
+          width: 250px;
+          
+        }
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: calc(100vh - 100px - 600px);
+  //background-color: #F89174;
+  opacity: 0.8;
+  color: white;
+  .container{
+    width: 90%;
+    height: 60%;
+    //background-color: #FF1A6F;
+    margin: 0 auto;
+    //text-align: center;
+    .container__btn{
+      width: 100%;
+      height: 50%;
+      //background-color: yellowgreen;
+      display: flex;
+      .container-item{
+        margin: 0 auto;
+        text-decoration: none;
+        padding: 0 20px;
+        .footer-link{
+          text-decoration: none;
+          padding: 0 10px;
+          color:  #FF0461;
+          font-size: 30px;
+          
+        }
+        .footer-link:hover{
+          color: chartreuse;
+        }
+      }
+    }
+    &__net{
+      width: 100%;
+      height: 50%;
+      //background-color: #00ECFF;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.contact
+  .contact-all
+    .contact-me
+      -# .contact-home
+      -#   %a.header-link{:href => root_path}Home
+      .contact-main
+        %h5 Contact Me
+        %p 制作・ご相談、お気軽にご連絡ください。
+      .contact-blank
+    .contact-manner
+      .call
+        .call-icon
+          = icon('fas','mobile-alt', class: 'mobile-icon')
+        .call-content
+          %h5 Call Me On
+          %p 080-0000-1111
+
+      .Email
+        .email-icon
+          = icon('fas','envelope', class: 'mail-icon')
+        .email-content
+          %h5 Email Me At
+          %p kamiyama0011@gmail.com
+      .visit
+        .visit-icon
+          = icon('fas','map-marker-alt', class: 'marker-icon')
+        .visit-content
+          %h5 Visit Office
+          %p 青森県 十和田市
+
+    .contact-form
+      .forms
+        .row
+          .cal-lg-6
+            .cal-message 氏名
+            %input.login-input-text{:name => "name", :placeholder => "Your Name", :type => "text", :value => ""}/
+          .cal-lg-6
+            .cal-message メールアドレス
+            %input.login-input-text{:name => "email", :placeholder => "Your Email", :type => "email", :value => ""}/
+        .row
+          .cal-lg-7
+            .cal-message 件名
+            %input.Subject{:name => "name", :placeholder => "Your Subject", :type => "text", :value => ""}/
+        .row
+          .cal-lg-7
+            .cal-message 詳細メッセージ
+            %textarea.textarea{:name => "comments", :placeholder => "Your Messages",:rows => 5}
+        .row
+          .cal-lg-8
+            %input.send-btn{:name => "send", :placeholder => "Your Subject", :type => "submit", :value => "送信"}/
+
